@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: PingFang SC Semibold, PingFang SC Semibold-Semibold;
+
+}
+
+p, span, h1, h2, h3, h4, h5 {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    width: 800px;
+    min-height: 1280px;
+    background: rgba(37, 80, 167, 0.1);
+    position: relative;
+}
+
+/*头部*/
+
+.header {
+    width: 800px;
+    height: 80px;
+    background: rgba(37, 80, 167, 0.9);
+    position: relative;
+}
+
+.hysmc {
+    width: 160px;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    line-height: 80px;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    padding-left: 50px;
+}
+
+.riqi {
+    width: 230px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+    color: #ffffff;
+    line-height: 80px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    padding-right: 50px;
+}
+
+/*底部导航*/
+.footer {
+    width: 800px;
+    height: 100px;
+    background: rgba(37, 80, 167, 0.9);
+    position: fixed;
+    bottom: 0px;
+    z-index: 160;
+
+}
+
+.footer ul li {
+    float: left;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.footer ul li p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 18px 0;
+    text-shadow: 0px 3px 1px rgba(37, 80, 167, 0.9);
+}
+
+.footer ul li p:before {
+    content: " ";
+    display: block;
+    height: 28px;
+    background-size: 100%;
+}
+
+.footer .syp:before {
+    margin: 2px 0 6px 7px;
+    background: url("../images/sy.png") no-repeat;
+}
+
+.footer .hylbp:before {
+    margin: 2px 0 6px 33px;
+    background: url("../images/hylb.png") no-repeat;
+}
+
+.footer .hysp:before {
+    margin: 2px 0 6px 22px;
+    background: url("../images/hys.png") no-repeat;
+}
+
+.footer .lxwmp:before {
+    margin: 2px 0 6px 30px;
+    background: url("../images/lxwm.png") no-repeat;
+}
+
+.footer .xz {
+    background: rgba(37, 80, 167, 1);
+}
+
+.footer ul li a {
+    color: white;
+}

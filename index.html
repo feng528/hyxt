@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/base.css">
+    <style type="text/css">
+
+        /*头图*/
+        .picture {
+            width: 800px;
+            height: 380px;
+            position: relative;
+        }
+
+        .picture .mark {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 380px;
+            background-image: url("images/mark.png");
+            background-repeat: no-repeat;
+            background-position: top;
+            opacity: 0.16;
+        }
+
+        .zhutu {
+            width: 100%;
+            height: 380px;
+            margin: 0 auto;
+        }
+
+        /*滑块*/
+        .huakuai {
+            width: 700px;
+            height: 100px;
+            margin: 0 50px;
+            position: absolute;
+            top: 392px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 10px 20px 0px rgba(15, 41, 93, 0.28);
+        }
+
+        .anniu {
+            width: 366px;
+            height: 102px;
+            margin: 0 10px;
+            position: fixed;
+            top: 390px;
+            right: 60px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 10px 0px rgba(19, 60, 142, 0.24);
+            z-index: 120;
+            text-align: center;
+        }
+
+        .anwz {
+            font-size: 46px;
+            font-weight: 500;
+            line-height: 100px;
+            letter-spacing: 0px;
+            color: rgba(37, 80, 167, 0.9);
+        }
+
+        .kxz {
+            width: 350px;
+            height: 100px;
+            /*background-color: #3A61B0;*/
+            background: rgba(37, 80, 167, 0.9);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+        }
+
+        .syz {
+            width: 350px;
+            height: 100px;
+            /*background-color: #d56839;*/
+            background: rgba(208, 88, 35, 0.9);
+            border-radius: 10px;
+            position: absolute;
+            right: 0;
+        }
+
+        .kxzwz,
+        .syzwz {
+            font-size: 52px;
+            font-weight: 500;
+            color: #ffffff;
+            /*line-height: 100px;*/
+            margin-top: 13px;
+            letter-spacing: 6px;
+        }
+
+        .kxzwz {
+            float: left;
+            margin-left: 72px;
+        }
+
+        .syzwz {
+            float: right;
+            margin-right: 72px;
+        }
+
+        /*主会议*/
+        .zhuhy {
+            width: 700px;
+            height: 280px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px 0px rgba(15, 41, 93, 0.28);
+            margin: 70px 50px 0px 50px;
+            position: relative;
+        }
+
+        .hyz {
+            position: absolute;
+            top: 34px;
+            left: 0;
+        }
+
+        .hyz li {
+            height: 54px;
+            margin: 0 0 26px 30px;
+            border-left: 6px solid rgba(208, 88, 35, 0.9);
+        }
+
+        .hyz p {
+            margin-left: 16px;
+            width: 620px;
+        }
+
+        .hyz .wt {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(37, 80, 167, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .hyz .da {
+            font-size: 28px;
+            font-weight: 600;
+            color: rgba(37, 80, 167, 0.9);
+            letter-spacing: 1px;
+            line-height: 34px;
+        }
+
+        .hyy {
+            position: absolute;
+            right: 0;
+            margin: 115px 30px 0 0;
+        }
+
+        .hyy p {
+            font-size: 46px;
+            color: rgba(208, 88, 35, 0.9);
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        /*其他会议*/
+        .qita {
+            height: 300px;
+            margin: 30px 50px 0 50px;
+            position: relative;
+        }
+
+        .qtbt {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: 0px;
+            color: rgba(37, 80, 167, 0.9);
+            margin: 12px 0 20px 0;
+        }
+
+        .qita ul li {
+            height: 70px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .qita .qt1 {
+            background: rgba(37, 80, 167, 0.7);
+        }
+
+        .qtz {
+            position: absolute;
+            left: 0;
+            margin-top: 9px;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        .qtz p {
+            width: 420px;
+        }
+
+        .qty {
+            position: absolute;
+            right: 0;
+            margin-top: 18px;
+            margin-right: 30px;
+            font-size: 32px;
+        }
+
+        .qita .qt2 {
+            background: rgba(37, 80, 167, 0.5);
+        }
+
+        .qita .qt3 {
+            background: rgba(37, 80, 167, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <!-- 头部 -->
+    <div class="header">
+        <p class="hysmc">大会议室</p>
+        <p class="riqi">2020年10月20日</p>
+    </div>
+    <!-- .头部 -->
+
+    <!-- 头图（固定图片） -->
+    <div class="picture">
+        <div class="mark"></div>
+        <img class="zhutu" src="images/westlake.jpg" alt="">
+    </div>
+    <!-- .头图 -->
+
+    <!-- 滑块开关 -->
+    <div class="huakuai">
+        <div class="anniu">
+            <p class="anwz">Meeting Room</p>
+        </div>
+        <div class="kxz">
+            <p class="kxzwz">空闲中</p>
+        </div>
+        <div class="syz">
+            <p class="syzwz">使用中</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- .滑块开关 -->
+
+    <!-- 将开始的会议 -->
+    <div class="zhuhy">
+        <a href="hyxq.html">
+            <div class="hyz">
+                <ul>
+                    <li>
+                        <p class="wt">主题 SUBJECT:</p>
+                        <p class="da">研发讨论</p>
+                    </li>
+                    <li>
+                        <p class="wt">日期 DATE:</p>
+                        <p class="da">2020年10月28日</p>
+                    </li>
+                    <li>
+                        <p class="wt">主持人 MODERATOR:</p>
+                        <p class="da">吴晓云 <span>产品研发部</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="hyy">
+                <p>9:00~12:00</p>
+            </div>
+        </a>
+    </div>
+    <!-- .将开始的会议 -->
+
+    <!-- 其他会议（按时间先后默认显示接下去的三个会议） -->
+    <div class="qita">
+        <p class="qtbt">其他会议</p>
+        <ul>
+            <a href="hyxq.html">
+                <li class="qt1">
+                    <div class="qtz">
+                        <p>主题：研发讨论</p>
+                        <p>日期：2020年10月28日</p>
+                    </div>
+                    <div class="qty">
+                        <p>9:00~12:00</p>
+                    </div>
+                </li>
+            </a>
+            <a href="hyxq.html">
+                <li class="qt2">
+                    <div class="qtz">
+                        <p>主题：研发讨论</p>
+                        <p>日期：2020年10月28日</p>
+                    </div>
+                    <div class="qty">
+                        <p>9:00~12:00</p>
+                    </div>
+                </li>
+            </a>
+            <a href="hyxq.html">
+                <li class="qt3">
+                    <div class="qtz">
+                        <p>主题：研发讨论</p>
+                        <p>日期：2020年10月28日</p>
+                    </div>
+                    <div class="qty">
+                        <p>9:00~12:00</p>
+                    </div>
+                </li>
+            </a>
+        </ul>
+
+    </div>
+    <!-- .其他会议 -->
+
+    <!-- 底部导航条 -->
+    <div class="footer">
+        <ul>
+            <li class="xz">
+                <a href="index.html">
+                    <p class="syp">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="hylb.html">
+                    <p class="hylbp">会议列表</p>
+                </a>
+            </li>
+            <li>
+                <a href="hys.html">
+                    <p class="hysp">会议室</p>
+                </a>
+            </li>
+            <li>
+                <a href="lxwm.html">
+                    <p class="lxwmp">联系我们</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- .底部导航条 -->
+</div>
+</body>
+</html>

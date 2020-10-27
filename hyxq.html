@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会议详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/base.css">
+    <style type="text/css">
+
+        /*会议详情*/
+        .hyxq {
+            width: 700px;
+            margin: 30px 50px 0 50px;
+            position: relative;
+        }
+
+        .hyxqbt {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: rgba(37, 80, 167, 0.9);
+            margin: 12px 0 20px 0;
+        }
+
+        .yi {
+            width: 100%;
+        }
+
+        .wei {
+            width: 100%;
+            color: rgba(208, 88, 35, 0.9);
+        }
+
+        .hyxqtu {
+            height: 380px;
+            background: url("images/hy01.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        .hyxqwz {
+            height: 460px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .hyxqwz ul {
+            padding-top: 38px;
+        }
+
+        .hyxqwz li {
+            height: 54px;
+            margin: 0 0 26px 30px;
+            border-left: 6px solid rgba(208, 88, 35, 0.9);
+        }
+
+        .hyxqwz p {
+            margin-left: 16px;
+            width: 620px;
+        }
+
+        .hyxqwz .wt {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(37, 80, 167, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .hyxqwz .da {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgba(37, 80, 167, 0.9);
+            letter-spacing: 1px;
+            line-height: 26px;
+            margin-top: 10px;
+        }
+
+        .qd {
+            width: 100%;
+        }
+
+        .qd li {
+            float: left;
+            padding: 6px 30px;
+            border-radius: 30px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin: 0 20px 20px 0;
+        }
+        .yqd li {
+            background: rgba(37, 80, 167, 0.9);
+            box-shadow: 0px 6px 8px 0px rgba(37, 80, 167, 0.5);
+        }
+        .wqd li {
+            background: rgba(208, 88, 35, 0.9);
+            box-shadow: 0px 6px 8px 0px rgba(208, 88, 35, 0.5);
+        }
+        .bott {
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <!-- 头部 -->
+    <div class="header">
+        <p class="hysmc">大会议室</p>
+        <p class="riqi">2020年10月20日</p>
+    </div>
+    <!-- .头部 -->
+
+
+    <!-- 会议详情 -->
+    <div class="hyxq">
+        <p class="hyxqbt">会议详情</p>
+        <div class="hyxqtu"></div>
+        <div class="hyxqwz">
+            <ul>
+                <li>
+                    <p class="wt">主题 SUBJECT:</p>
+                    <p class="da">研发讨论</p>
+                </li>
+                <li>
+                    <p class="wt">日期 DATE:</p>
+                    <p class="da">2020年10月28日 9:00~12:00</p>
+                </li>
+                <li>
+                    <p class="wt">主持人 Moderator:</p>
+                    <p class="da">吴晓云 产品研发部门</p>
+                </li>
+                <li>
+                    <p class="wt">会议简述 sketch:</p>
+                    <p class="da">道安门禁管理系统的升级，需求更新。</p>
+                </li>
+                <li>
+                    <p class="wt">备注说明 Remarks:</p>
+                    <p class="da">备注说明</p>
+                </li>
+            </ul>
+        </div>
+
+        <p class="hyxqbt yi">已签到</p>
+        <div class="qd yqd">
+            <ul>
+                <li class="xm">吴晓云</li>
+                <li class="xm">吴晓</li>
+                <li class="xm">吴晓云</li>
+                <li class="xm">欧阳晓云</li>
+                <li class="xm">吴晓云</li>
+                <li class="xm">欧阳晓云</li>
+                <li class="xm">吴晓云</li>
+                <li class="xm">欧阳晓云</li>
+            </ul>
+        </div>
+
+        <p class="hyxqbt wei">未签到</p>
+        <div class="qd wqd">
+            <ul>
+                <li class="xm">吴晓云</li>
+                <li class="xm">吴晓</li>
+                <li class="xm">吴晓云</li>
+                <li class="xm">欧阳晓云</li>
+                <li class="xm">吴晓云</li>
+                <li class="xm">欧阳晓云</li>
+                <li class="xm">吴晓云</li>
+                <li class="xm">欧阳晓云</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="bott"></div>
+    </div>
+    <!-- .会议详情 -->
+
+    <!-- 底部导航条 -->
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <p class="syp">首页</p>
+                </a>
+            </li>
+            <li class="xz">
+                <a href="hylb.html">
+                    <p class="hylbp">会议列表</p>
+                </a>
+            </li>
+            <li>
+                <a href="hys.html">
+                    <p class="hysp">会议室</p>
+                </a>
+            </li>
+            <li>
+                <a href="lxwm.html">
+                    <p class="lxwmp">联系我们</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- .底部导航条 -->
+</div>
+</body>
+</html>
